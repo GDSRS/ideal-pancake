@@ -1,0 +1,48 @@
+.outer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100%;
+  width: 100%;
+  background-image: url('./assets/desert-caatinga-brasil-serto.jpg')
+}
+
+.login-container {
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  padding: 1em;
+  width: 15em;
+  border-radius: 1em;
+  --webkit-box-shadow: 0px 12px 24px -2px rgba(0,0,0,0.55); 
+  box-shadow: 0px 12px 24px -2px rgba(0,0,0,0.55);
+  background-color: white;
+}
+
+input {
+  margin-bottom: 1em;
+}
+
+#logo-image {
+  background-image: url('./assets/login_logo.png');
+  background-size: 100% 100%;
+  /*background-color: blue;*/
+  margin: 2em;
+  width: 7em;
+  height: 6em;
+}
+
+#btn-entrar {
+  background-color: green;
+  border-color:green;
+  border-radius: .5em;
+}
+
+#btn-cadastrar {
+  background-color: blue;
+  border-color:blue;
+  border-radius: .5em;
+  margin-right: 1em;
+}

@@ -1,0 +1,33 @@
+version: '3.1'
+services:
+  back:
+    build:
+      context: ./produtor_back/
+      dockerfile: Dockerfile
+    user: "${CURRENT_UID}"
+    network_mode: 'host'
+    working_dir: /apk
+    volumes:
+      - './produtor_back/:/apk'
+
+  front:
+    build:
+      context: ./produtor_front/
+      dockerfile: Dockerfile-prod
+    user: "${CURRENT_UID}"
+    network_mode: 'host'
+    working_dir: /usr/src/app
+    volumes:
+      - ./produtor_front/application/:/usr/src/app
+    stdin_open: true
+
+  db:
+    user: "${CURRENT_UID}"
+    image: 'postgres:alpine'
+    network_mode: 'host'
+    volumes:
+      - ./produtor_back/postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: 'produtos_rurais'
+      POSTGRES_USER: 'produtor_pg'
+      POSTGRES_PASSWORD: 'pgpassword'

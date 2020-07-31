@@ -1,0 +1,6 @@
+.edit-btn {
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url('./assets/edit_icon.png');
+  background-size: 100% 100%; 
+}

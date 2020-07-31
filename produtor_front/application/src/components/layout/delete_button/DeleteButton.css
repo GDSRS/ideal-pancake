@@ -1,0 +1,15 @@
+.delete-btn {
+  width: 1.5em;
+  height: 1.5em;
+  background-color:red;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.bar {
+  width: 1em;
+  background-color: white;
+  height: .2em;
+  border-radius: 15%;
+}

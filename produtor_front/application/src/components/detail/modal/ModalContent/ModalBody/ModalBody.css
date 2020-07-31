@@ -1,0 +1,32 @@
+#modal-body {
+	/*background-color: red;*/
+	padding: 0% 5% 5% 5%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#modal-body > * {
+	font-family: Laksaman;
+}
+
+h3 {
+	/*background-color: yellow;*/
+	text-align: center;
+}
+
+.modal-field {
+	/*background-color: blue;*/
+	display: inline-block;
+}
+
+.modal-field > * {
+	display: block;
+}
+
+#submit-button {
+	position: absolute;
+	right: 1%;
+	bottom: 1.5%;
+}

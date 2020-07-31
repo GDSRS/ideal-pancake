@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    user: "${CURRENT_UID}"
+    network_mode: 'host'
+    working_dir: /apk
+    volumes:
+      - '.:/apk'
+  db:
+    user: "${CURRENT_UID}"
+    image: 'postgres:alpine'
+    network_mode: 'host'
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: 'produtos_rurais'
+      POSTGRES_USER: 'produtor_pg'
+      POSTGRES_PASSWORD: 'pgpassword'
+    #userns_mode:'host'

@@ -1,0 +1,32 @@
+.modal-content {
+	position: relative;
+	background-color: white;
+	border: 1px solid black;
+	width: 35em;
+	height: 20em;
+}
+
+/*https://alligator.io/css/centering-using-flexbox/*/
+
+.modal-content, #modal-header {
+	border-radius: .8em;
+}
+
+.modal-cover {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translateZ(0);
+  	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-wrapper {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display:flex;
+  	justify-content:center;
+  	align-items:center;
+}

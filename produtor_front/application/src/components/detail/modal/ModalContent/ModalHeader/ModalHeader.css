@@ -1,0 +1,25 @@
+#modal-header-container {
+	position: relative;
+	width: 100%;
+	height: 10%;
+	right: 0em;
+	background-color: #f4f4f7;
+	border-bottom: 0.08em black solid;
+	margin-bottom: 1%;
+	border-radius: .8em .8em 0em 0em;
+}
+
+.title {
+	margin: 0;
+	position: absolute;
+	margin-left: 35%;
+}
+
+#image-div {
+	position: absolute;
+	right: 0em;
+	width: 7%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-image: url(./assets/closeimg.png)
+}

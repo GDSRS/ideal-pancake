@@ -1,0 +1,23 @@
+.BurgerButton > i {
+	width: 1.78em;
+	height: .25em;
+	margin: .18em;
+	background-color: gray;
+	display: flex;
+	flex-direction: row;
+	border-radius: .5em;
+}
+
+.BurgerButton {
+	width: 2em;
+	transition: all ease .5s;
+	margin-left: .5em;
+}
+
+.BurgerButton--foward {
+	transform: translateX(14.7em);
+}
+
+.BurgerButton--origin {
+	transform: translateX(0);
+}

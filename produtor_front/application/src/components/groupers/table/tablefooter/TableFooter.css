@@ -1,0 +1,19 @@
+.flex--footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
+
+.left--footer {
+  width: 2em;
+  flex-basis: 35%;
+}
+
+
+.right--footer {
+  width: 2em;
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: row-reverse;
+}

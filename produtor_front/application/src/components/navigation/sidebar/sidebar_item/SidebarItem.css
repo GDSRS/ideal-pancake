@@ -1,0 +1,14 @@
+.SidebarItem {
+	margin-bottom: 1em;
+	margin-left: -1em;
+	text-transform: uppercase;
+	/*font-family: Aharoni;*/
+	cursor: pointer;
+	/*border: solid .5em black;*/
+}
+
+.SidebarItemLink {
+	text-decoration: none;
+	color: black;
+	text-decoration-style: none;
+}

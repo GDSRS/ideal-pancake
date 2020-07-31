@@ -1,0 +1,20 @@
+.Table {
+	position: absolute;
+	width: 50%;
+	background-color: white;
+	border-radius: .4em;
+	left: 20em;
+	top: 5em;
+	
+}
+
+.Table, th, td {
+	/*border: .1em solid black;*/
+	border-collapse: collapse;
+	text-align: center;
+	padding:.3em;
+}
+
+.table-button {
+	position: absolute;
+}

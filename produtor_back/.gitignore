@@ -1,0 +1,5 @@
+*.sublime*
+postgres_data/*
+env/*
+.directory
+*.pyc

@@ -1,0 +1,21 @@
+.table-pagination {
+  width: 10em;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.buttons {
+  width: 2em;
+}
+
+
+.buttons, .current-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

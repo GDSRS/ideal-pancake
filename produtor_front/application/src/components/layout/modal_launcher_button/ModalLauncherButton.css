@@ -1,0 +1,15 @@
+.add-btn {
+	/*background-image: url('./assets/plus_icon.png');*/
+	background-color: #009bf2;
+	/*background-size: 100% 100%;*/
+	width: 5em;
+	height: 2em;
+	border-radius: .5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	height:1.5em; 
+}
